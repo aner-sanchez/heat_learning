@@ -13,7 +13,7 @@
 
 function [L,H,tau] = LearnHeat(X,iter,alpha,beta,tau,gamma)
     %% params
-    if nargin < 6; gamma = struct('c',1.2,'d',1.2,'e',1.2); end
+    aux = 1.1; if nargin < 6; gamma = struct('c',aux,'d',aux,'e',aux); end
     if nargin < 5; tau = [2.5;4]; end
     if nargin < 4; beta = 0.01; end
     if nargin < 3; alpha = 0.1; end
@@ -26,7 +26,7 @@ function [L,H,tau] = LearnHeat(X,iter,alpha,beta,tau,gamma)
     %% Initialization
     L = zeros(params.n); D = HeatDict(L,tau); H = zeros(params.n.*params.S,params.m);
     % store lipschitz constants in a struct
-    lip = struct('c',0,'d',0,'e',0); lip.d = 1;
+    lip = struct('c',0,'d',0,'e',0); lip.d = 0.1;
     %% Iterations, alternating between H, L, tau
     for t=1:iter
         %% H

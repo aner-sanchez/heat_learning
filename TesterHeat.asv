@@ -24,7 +24,7 @@ L2 = randgraph_RBF(4);
 
 true_tau2 = [2.5;4];
 % create 100 random signals
-[X2,H2] = randsignal(L2,1,true_tau2);
+[X2,H2] = randsignal(L2,10,true_tau2);
 true_dict2 = HeatDict(L2,true_tau2);
 
 % we will suppose there are two underlying diffusion processes

@@ -32,6 +32,16 @@ LearnHeat.m
 Main script, collects everything and alternates between minimization of L, H,
 tau.
 
+random_graph_RBF.m
+
+Creates a random graph just as in the paper for testing purposes using a RBF.
+
+randsignal.m
+
+Creates a random sparse signal on a graph given the Laplacian, creates the dictionary
+and linearly combines three random columns with standard gaussian coefficients
+m times.
+
 TesterHeat.m
 
 Secondary script to test if everything is working. Can generate random inputs.

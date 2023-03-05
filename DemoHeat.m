@@ -34,5 +34,10 @@ iter = input("iter: number of iterations (you can put 20) <- ")
 quiet = input("type 0 if you want information through the optimization process (you surely do) ")
 disp("I will choose a tau for you, which is not the real tau")
 tau2 = [1;2]
+disp("wait")
+pause(4)
+clc
 disp("now is up to you: type the following in the terminal")
 disp("LearnHeat(X,iter,alpha,beta,tau2,quiet)")
+disp("I will do it for you this time")
+LearnHeat(X,iter,alpha,beta,tau2,quiet)

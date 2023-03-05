@@ -1,4 +1,5 @@
 This is code to emulate the algorithm exposed in https://arxiv.org/abs/1611.01456.
+To start using it type HeatStart.m in the command line.
 
 HeatDict.m
 

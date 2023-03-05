@@ -1,0 +1,45 @@
+03/03/2023
+
+Laplacian is not being learned. Test X-DH with learned objects not working,
+not at all.
+TO DO:
+Try with smooth signal learning.
+BAD THING:
+Smooth signal learning doesn't work like this learning, you have to put a pairwise
+distance matrix, that would be maybe pairwise distances from the image of signal.
+
+04/03/2023
+
+Compare step by step my MATLAB code with Python code, only in the internet.
+
+lipschitz_C1                    done
+descent_condition_by_cost
+descent_condition
+back_tracking
+lipschitz_c3
+soft_threshold
+gradient_z_to_H
+gradient_z_to_L
+gradient_z_to_tau
+H_matrix_to_list
+dtrAenLdL
+dtrAeLdL
+admm
+Z                               done
+tautp1_closed
+D                               done
+matrix_inner                    done
+hessian_Z_to_tau
+cal_cost                        done, this was a really good idea, you need to see that you are really optimizing something
+learn_heat
+
+I get an error like this when trying to run Simulation Nº2:
+
+Warning: Your Hessian is not symmetric. Resetting
+H=(H+H')/2. 
+Error using ipqpcommon
+The interior-point-convex algorithm requires all
+objective and constraint values to be finite.
+
+P goes to infinity in a subcycle in HeatLipL.m
+Everything is fault of the L update, need to restructure everything.

@@ -1,5 +1,5 @@
 This is code to emulate the algorithm exposed in https://arxiv.org/abs/1611.01456.
-To start using it type HeatStart.m in the command line.
+To start using it type HeatStart in the command line, if it doesn't work, then just initiate cvx as you can, it doesn't even need to be in the same folder, and type DemoHeat afterwards.
 
 HeatDict.m
 

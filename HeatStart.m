@@ -1,5 +1,4 @@
 [~,current_dir,~] = fileparts(pwd);
-if current_dir == "heat_learning"
     if exist('cvx', 'dir') == 7
         cd cvx\
         if exist('cvx_setup','file') == 2
@@ -21,8 +20,5 @@ if current_dir == "heat_learning"
             "to download cvx, it is a package for convex optimization" + ...
             "I use it for a function which I can't get myself");
         fprintf("..................................\n");
-        fprintf("You need to download it and unzip it in heat_learning/cvx")
+        fprintf("You need to download it and unzip it in heat_learning/cvx or heat_learning-master/cvx (this folder)")
     end
-else
-    disp("go to directory ~\heat_learning and type it again");
-end
